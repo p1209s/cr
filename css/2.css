@@ -1,0 +1,23 @@
+.box-a {
+    background-color: rgb(255, 149, 149);
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 300px;
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.box-b {
+    background-color: rgb(134, 134, 255);
+    padding: 20px;
+    border: 2px solid black;
+    margin-right: 300px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+}
