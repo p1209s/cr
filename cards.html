@@ -10,74 +10,95 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h1 align="center">CARDS</h1>
-            <nav class="site-nav">
-                <ul class="group">
-                    <li><a href="gameplay.html">Gameplay</a></li>
-                    <ul>
-                        <li><a href="cards.html">Cards</a></li>
-                        <li><a href="clans.html">Clans</a></li>
-                        <li><a href="clanwars.html">Clan Wars</a></li>
-                        <li><a href="tournaments.html">Tournaments</a></li>
-                        <li><a href="leagues.html">Leagues</a></li>
-                        <li><a href="quests.html">Quests</a></li>
-                    </ul>
-                </ul>
-            </nav>
-        </header>
-        <div class="content-area group">
-            <div class="main-area">
-                <p>Playable troops, buildings, and spells are represented as <strong><em>Cards</em></strong>. Prior to each battle (with the exception of the first battle in Training Camp), players construct a deck of eight cards which they use to attack
-                    and defend against their opponent's cards. At the start of each game, both players begin with four randomly chosen cards from their deck of eight, except Mirror and Elixir Collector.
-                </p>
-                <p>
-                    Each card costs a certain amount of elixir to play. Players start the battle with 5 elixir points (0 in Double and Triple Elixir modes), and one elixir point is replenished every 2.8 seconds (or 1.4 seconds in the final 60 seconds of the game and the
-                    first minute of overtime, and every 0.7 seconds during Triple Elixir mode and the last minute of overtime), with a maximum of 10 elixir points. Once a card is played, a new card is automatically drawn from the player's eight card deck.
-                </p>
-                <p>
-                    Clash Royale first launched with 42 cards, there were 14 cards for each of the three rarities that existed at that time: Common, Rare, and Epic. The February 2016 update added a new rarity: Legendary, with the introduction of two new legendary cards to
-                    the game. As of June 2020, there are 99 cards in the game, coming in four rarities: Common, Rare, Epic, and Legendary. The September 2018 update changed card levels as not to confuse new players. All cards now cap at level 13, with
-                    common cards starting at level 1, rare cards starting at level 3, epic cards starting at level 6, and legendary cards starting at level 9. All cards are level 9 for all tournaments. The December 2018 update added Star Points to unlock
-                    special golden cosmetics for Max Level cards.
-                </p>
-                <p>
-                    The June 2018 update added the emote deck, allowing players to use up to eight emotes from their emote collection. Players start with 4 free King emotes, but they can get more from the shop or challenges.
-                </p>
+<body onload="myFunction()" style="margin:0;">
 
-                <div class="image-banner">
-                    <img src="cards.jpg">
-                    <div class="banner-description">
-                        <p align="center">CLASH ROYALE CARDS</p>
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="container">
+            <header>
+                <h1 align="center">CARDS</h1>
+                <nav class="site-nav">
+                    <ul class="group">
+                        <li><a href="gameplay.html">Gameplay</a></li>
+                        <ul>
+                            <li><a href="cards.html">Cards</a></li>
+                            <li><a href="clans.html">Clans</a></li>
+                            <li><a href="clanwars.html">Clan Wars</a></li>
+                            <li><a href="tournaments.html">Tournaments</a></li>
+                            <li><a href="leagues.html">Leagues</a></li>
+                            <li><a href="quests.html">Quests</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </header>
+            <div class="content-area group">
+                <div class="main-area">
+                    <p>Playable troops, buildings, and spells are represented as <strong><em>Cards</em></strong>. Prior to each battle (with the exception of the first battle in Training Camp), players construct a deck of eight cards which they use to attack
+                        and defend against their opponent's cards. At the start of each game, both players begin with four randomly chosen cards from their deck of eight, except Mirror and Elixir Collector.
+                    </p>
+                    <p>
+                        Each card costs a certain amount of elixir to play. Players start the battle with 5 elixir points (0 in Double and Triple Elixir modes), and one elixir point is replenished every 2.8 seconds (or 1.4 seconds in the final 60 seconds of the game and the
+                        first minute of overtime, and every 0.7 seconds during Triple Elixir mode and the last minute of overtime), with a maximum of 10 elixir points. Once a card is played, a new card is automatically drawn from the player's eight card
+                        deck.
+                    </p>
+                    <p>
+                        Clash Royale first launched with 42 cards, there were 14 cards for each of the three rarities that existed at that time: Common, Rare, and Epic. The February 2016 update added a new rarity: Legendary, with the introduction of two new legendary cards to
+                        the game. As of June 2020, there are 99 cards in the game, coming in four rarities: Common, Rare, Epic, and Legendary. The September 2018 update changed card levels as not to confuse new players. All cards now cap at level 13,
+                        with common cards starting at level 1, rare cards starting at level 3, epic cards starting at level 6, and legendary cards starting at level 9. All cards are level 9 for all tournaments. The December 2018 update added Star Points
+                        to unlock special golden cosmetics for Max Level cards.
+                    </p>
+                    <p>
+                        The June 2018 update added the emote deck, allowing players to use up to eight emotes from their emote collection. Players start with 4 free King emotes, but they can get more from the shop or challenges.
+                    </p>
+
+                    <div class="image-banner">
+                        <img src="cards.jpg">
+                        <div class="banner-description">
+                            <p align="center">CLASH ROYALE CARDS</p>
+                        </div>
                     </div>
                 </div>
+                <div class="sidebar">
+                    <p>
+                        Trade tokens were introduced in the September 2018 update. They can be used to trade common, rare, epic, and legendary cards with clanmates so players can get more of the cards they need and get rid of the cards they don't want. They can be won from challenges,
+                        clan war rewards and purchased from the Shop in special offers.
+                    </p>
+                    <p>
+                        In October 2019, a free emote became available to anyone who links their account to their email through Supercell ID.
+                    </p>
+                </div>
             </div>
-            <div class="sidebar">
-                <p>
-                    Trade tokens were introduced in the September 2018 update. They can be used to trade common, rare, epic, and legendary cards with clanmates so players can get more of the cards they need and get rid of the cards they don't want. They can be won from challenges,
-                    clan war rewards and purchased from the Shop in special offers.
-                </p>
-                <p>
-                    In October 2019, a free emote became available to anyone who links their account to their email through Supercell ID.
-                </p>
-            </div>
+
+
+
+            <br><br>
+            <nav class="site-nav1">
+                <p align="center"> <a href="index.html">Back to Homepage</a></p>
+            </nav>
+            <br><br>
+            <footer align="center">
+                <p>&copy; 2020.</p>
+                <p>Officially created by Priyank Shah.</p>
+                <p>All Rights Reserved.</p>
+            </footer>
         </div>
-
-
-
-        <br><br>
-        <nav class="site-nav1">
-            <p align="center"> <a href="index.html">Back to Homepage</a></p>
-        </nav>
-        <br><br>
-        <footer align="center">
-            <p>&copy; 2020.</p>
-            <p>Officially created by Priyank Shah.</p>
-            <p>All Rights Reserved.</p>
-        </footer>
     </div>
+
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 500);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+
 </body>
 
 </html>

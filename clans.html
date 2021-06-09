@@ -10,54 +10,75 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h1 align="center">CLANS</h1>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="gameplay.html">Gameplay</a></li>
-                    <ul class="group">
-                        <li><a href="cards.html">Cards</a></li>
-                        <li><a href="clans.html">Clans</a></li>
-                        <li><a href="clanwars.html">Clan Wars</a></li>
-                        <li><a href="tournaments.html">Tournaments</a></li>
-                        <li><a href="leagues.html">Leagues</a></li>
-                        <li><a href="quests.html">Quests</a></li>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="container">
+            <header>
+                <h1 align="center">CLANS</h1>
+                <nav class="site-nav">
+                    <ul>
+                        <li><a href="gameplay.html">Gameplay</a></li>
+                        <ul class="group">
+                            <li><a href="cards.html">Cards</a></li>
+                            <li><a href="clans.html">Clans</a></li>
+                            <li><a href="clanwars.html">Clan Wars</a></li>
+                            <li><a href="tournaments.html">Tournaments</a></li>
+                            <li><a href="leagues.html">Leagues</a></li>
+                            <li><a href="quests.html">Quests</a></li>
+                        </ul>
                     </ul>
-                </ul>
-            </nav>
-        </header>
-        <div class="content-area group">
-            <div class="main-area">
-                <p>
-                    Starting from Experience level 1, players can join or form <strong><em>Clans</em></strong>. Joining or forming a clan enables the player to engage in friendly battles and clan wars. It also unlocks the feature of trading and requesting
-                    cards from clanmates after becoming level 2.</p>
-                <div class="image-banner">
-                    <img src="clans.jpg">
-                    <div class="banner-description">
-                        <p align="center">CLANS</p>
+                </nav>
+            </header>
+            <div class="content-area group">
+                <div class="main-area">
+                    <p>
+                        Starting from Experience level 1, players can join or form <strong><em>Clans</em></strong>. Joining or forming a clan enables the player to engage in friendly battles and clan wars. It also unlocks the feature of trading and requesting
+                        cards from clanmates after becoming level 2.</p>
+                    <div class="image-banner">
+                        <img src="clans.jpg">
+                        <div class="banner-description">
+                            <p align="center">CLANS</p>
+                        </div>
                     </div>
+
                 </div>
+                <div class="sidebar">
+                    <p>Clan members can also chat and share emotes with their clanmates. A clan has a maximum player limit of 50.
+                    </p>
+                </div>
+            </div>
 
-            </div>
-            <div class="sidebar">
-                <p>Clan members can also chat and share emotes with their clanmates. A clan has a maximum player limit of 50.
-                </p>
-            </div>
+            <br><br>
+            <nav class="site-nav1">
+                <p align="center"><a href="index.html">Back to Homepage</a></p>
+            </nav>
+            <br><br>
+            <footer align="center">
+                <p>&copy; 2020.</p>
+                <p>Officially created by Priyank Shah.</p>
+                <p>All Rights Reserved.</p>
+            </footer>
         </div>
-
-        <br><br>
-        <nav class="site-nav1">
-            <p align="center"><a href="index.html">Back to Homepage</a></p>
-        </nav>
-        <br><br>
-        <footer align="center">
-            <p>&copy; 2020.</p>
-            <p>Officially created by Priyank Shah.</p>
-            <p>All Rights Reserved.</p>
-        </footer>
     </div>
+
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 500);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+
 </body>
 
 </html>
